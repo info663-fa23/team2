@@ -67,6 +67,8 @@
                     </div>
                 </div>
                 {%- endif -%}
+                {% comment %}
+                {% raw %}
                 {% if stubs contains "timeline" %}
                 <div class="card my-3">
                     <div class="card-body">
@@ -76,6 +78,8 @@
                     </div>
                 </div>
                 {%- endif -%}
+                {% endraw %}
+                {% endcomment %}
                 <div class="card my-3">
                     <div class="card-body">
                         <h2 class="card-title h4">Website Source Code</h2>
