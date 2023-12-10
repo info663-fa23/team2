@@ -1,5 +1,7 @@
 field,display_name
-title,Title
-date,Date
-description,Description
-subject,Subjects
+title,Event Title
+object_location,Video URL
+dct:isPartOf,Collection Title
+dct:spatial,Event Location
+pbc:pbcoreAssetDate,Event Date
+dct:type,Event Type
