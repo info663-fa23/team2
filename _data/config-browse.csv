@@ -1,6 +1,23 @@
 field,display_name,btn,hidden,sort_name
-date,Date,,,Date
-creator,Creator,,,
-subject,,true
-location,,true
-identifier,,,true,Identifier
+dct:isPartOf,Collection Title,,,Collection
+dct:alternative,Alternate Title,,,
+dct:spatial,Event Location,,,
+pbc:pbcoreDescription,,,true,
+pbc:pbcoreAssetDate,Event Date,,,Date
+dct:language,Language,,,Language
+dct:type,Event Type,,,Event Type
+pbc:pbcoreSubject,,true,,
+hemi:assistantDirector,Assistant Director,,,
+hemi:composer,Composer,,,
+hemi:costumeDesigner,Costume Designer,,,
+hemi:creator,Creator,,,
+hemi:director,Director,,,
+hemi:editor,Editor,,,
+hemi:interviewee,Interviewee,,,
+hemi:interviewer,Interviewer,,,
+hemi:pedagogue,Pedagogue,,,
+hemi:performer,Performer,,,
+hemi:producer,Producer,,,
+hemi:setDesigner,Set Designer,,,
+hemi:videographer,Videographer,,,
+hemi:writer,Writer,,,
