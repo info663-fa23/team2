@@ -4,7 +4,7 @@
 # current using relative_url due to jekyll bug, should be absolute_url in production!
 # to just feature parent objects of compound objects, you will want to change the where_exp below to "where_exp: 'item','item.parentid == nil'"
 ---
-{%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
+{%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' | where_exp: 'item', 'item.date' -%}
 {
     "title": {
         "media": {
@@ -18,17 +18,17 @@
         }
     },
     "events": [
-      {% for item in items %}{% assign itemDate = item.pbc:pbcoreAssetDate %}{
+      {% for item in items %}{
         "media": {
           "url": "{{ item.image_small | default: item.image_thumb | default: item.object_location | relative_url }}",
           "caption": {{ item.title | jsonify }},
           "link": {% if item.parentid %}{{ '/items/' | append: item.parentid | append: '.html#' | append: item.objectid | relative_url | jsonify }}{% else %}{{ '/items/' | append: item.objectid | append: '.html' | relative_url | jsonify }}{% endif %}
         },
         "start_date": { 
-          {% if itemDate contains '-' %}{% assign dates = itemDate | strip | split: '-' %}
+          {% if item.date contains '-' %}{% assign dates = item.date | strip | split: '-' %}
           "month": "{{ dates[1] }}",
           "day": "{{ dates[2] }}",
-          "year": "{{ dates[0] }}"{% elsif itemDate contains '/' %}"year": "{{ itemDate | strip | split: '/' | last }}"{% elsif itemDate contains ' ' %}"year": "{{ itemDate | strip | split: ' ' | first }}"{% else %}
+          "year": "{{ dates[0] }}"{% elsif item.date contains '/' %}"year": "{{ item.date | strip | split: '/' | last }}"{% else %}
           "year": "{{ item.date }}"{% endif %}
         },
         "text": {
