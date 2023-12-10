@@ -1,14 +1,28 @@
 field,display_name,browse_link,external_link,dc_map,schema_map
-title,Title,,,DCTERMS.title,headline
-creator,Creator,,,DCTERMS.creator,creator
-date,Date Created,,,DCTERMS.date,dateCreated
-description,Description,,,DCTERMS.description,description
-subject,Subjects,true,,DCTERMS.subject,keywords
-location,Location,,,,contentLocation
-latitude,Latitude,,,,
-longitude,Longitude,,,,
-source,Source,,,,
-identifier,Source Identifier,,,,
-type,Type,,,DCTERMS.type,
-format,Format,,,,encodingFormat
-rightsstatement,,,,DCTERMS.rights,license
+title,Event Title,,,,
+objectid,Video Identifier,,,,
+object_location,Video URL,false,true,,
+pbc:instantiationDuration,Video Duration,,,,
+dct:isPartOf,Collection Title,true,,,
+dct:alternative,Alternate Title,,,,
+dct:spatial,Event Location,true,,,
+pbc:pbcoreDescription,Event Description,,,,
+pbc:pbcoreAssetDate,Event Date,,,,
+dct:language,Language,true,,,
+dct:type,Event Type,true,,,
+pbc:pbcoreSubject,Subject,true,,,
+dct:rightsHolder,Copyright Holder,,,,
+hemi:assistantDirector,Assistant Director,true,,,
+hemi:composer,Composer,true,,,
+hemi:costumeDesigner,Costume Designer,true,,,
+hemi:creator,Creator,true,,,
+hemi:director,Director,true,,,
+hemi:editor,Editor,true,,,
+hemi:interviewee,Interviewee,true,,,
+hemi:interviewer,Interviewer,true,,,
+hemi:pedagogue,Pedagogue,true,,,
+hemi:performer,Performer,true,,,
+hemi:producer,Producer,true,,,
+hemi:setDesigner,Set Designer,true,,,
+hemi:videographer,Videographer,true,,,
+hemi:writer,Writer,true,,,
