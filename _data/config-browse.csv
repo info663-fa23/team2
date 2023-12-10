@@ -1,23 +1,23 @@
 field,display_name,btn,hidden,sort_name
-dct:isPartOf,Collection Title,,,Collection
-dct:alternative,Alternate Title,,,
-dct:spatial,Event Location,,,
+dct:isPartOf,Collection,,,Collection
+dct:alternative,,,true,
+dct:spatial,Location,,,
 pbc:pbcoreDescription,,,true,
-pbc:pbcoreAssetDate,Event Date,,,Date
-dct:language,Language,,,Language
+pbc:pbcoreAssetDate,Date,,,Date
 dct:type,Event Type,,,Event Type
-pbc:pbcoreSubject,,true,,
-hemi:assistantDirector,Assistant Director,,,
-hemi:composer,Composer,,,
-hemi:costumeDesigner,Costume Designer,,,
-hemi:creator,Creator,,,
-hemi:director,Director,,,
-hemi:editor,Editor,,,
-hemi:interviewee,Interviewee,,,
-hemi:interviewer,Interviewer,,,
-hemi:pedagogue,Pedagogue,,,
-hemi:performer,Performer,,,
-hemi:producer,Producer,,,
-hemi:setDesigner,Set Designer,,,
-hemi:videographer,Videographer,,,
-hemi:writer,Writer,,,
+dct:language,Language,true,,
+pbc:pbcoreSubject,Subject,true,,
+hemi:assistantDirector,,,true,
+hemi:composer,,,true,
+hemi:costumeDesigner,,,true,
+hemi:creator,,,true,
+hemi:director,,,true,
+hemi:editor,,,true,
+hemi:interviewee,,,true,
+hemi:interviewer,,,true,
+hemi:pedagogue,,,true,
+hemi:performer,,,true,
+hemi:producer,,,true,
+hemi:setDesigner,,,true,
+hemi:videographer,,,true,
+hemi:writer,,,true,
