@@ -50,10 +50,10 @@ metadata: video-metadata
 #   Enter information for your organization (replacing the CDIL links and name below) if you'd like to brand your site with a logo
 #   To remove the branding, comment out these values, or delete them. 
 #
-organization-name: "Hemispheric Institute of Performance & Politics"
-organization-link: https://hemisphericinstitute.org/en/
-# organization-logo-banner: https://cdil.lib.uidaho.edu/storying-extinction/assets/img/cdil.png
-# organization-logo-nav: https://cdil.lib.uidaho.edu/assets/img/logo.png
+organization-name: "NYU Libraries"
+organization-link: https://hidvl.nyu.edu/
+organization-logo-banner: https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/14444/QegU03brSOSHlYa04Aw9
+organization-logo-nav: https://cdn.library.nyu.edu/images/nyulibraries-logo.svg
 
 ##########
 # GOOGLE SERVICES [optional!]
