@@ -18,17 +18,17 @@
         }
     },
     "events": [
-      {% for item in items %}{
+      {% for item in items %}{% assign itemDate = item.pbc:pbcoreAssetDate %}{
         "media": {
           "url": "{{ item.image_small | default: item.image_thumb | default: item.object_location | relative_url }}",
           "caption": {{ item.title | jsonify }},
           "link": {% if item.parentid %}{{ '/items/' | append: item.parentid | append: '.html#' | append: item.objectid | relative_url | jsonify }}{% else %}{{ '/items/' | append: item.objectid | append: '.html' | relative_url | jsonify }}{% endif %}
         },
         "start_date": { 
-          {% if item.pbc:pbcoreAssetDate contains '-' %}{% assign dates = item.pbc:pbcoreAssetDate | strip | split: '-' %}
+          {% if itemDate contains '-' %}{% assign dates = itemDate | strip | split: '-' %}
           "month": "{{ dates[1] }}",
           "day": "{{ dates[2] }}",
-          "year": "{{ dates[0] }}"{% elsif item.pbc:pbcoreAssetDate contains '/' %}"year": "{{ item.pbc:pbcoreAssetDate | strip | split: '/' | last }}"{% elsif item.pbc:pbcoreAssetDate contains ' ' %}"year": "{{ item.pbc:pbcoreAssetDate | strip | split: ' ' | first }}"{% else %}
+          "year": "{{ dates[0] }}"{% elsif itemDate contains '/' %}"year": "{{ itemDate | strip | split: '/' | last }}"{% elsif itemDate contains ' ' %}"year": "{{ itemDate | strip | split: ' ' | first }}"{% else %}
           "year": "{{ item.date }}"{% endif %}
         },
         "text": {
