@@ -18,12 +18,12 @@ source-code: https://github.com/CollectionBuilder/collectionbuilder-csv
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: Hemi Institute Video Collection
+title: Hemispheric Institute Digital Video Library
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: Streaming videos from the Hemispheric Institute of Politics and Performance
+tagline: Streaming videos from the Hemispheric Institute of Performance & Politics
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: This is a collection of streaming videos from the Hemispheric Institute of Politics and Performance
+description: This is a collection of streaming videos from the Hemispheric Institute of Performance & Politics
 # keywords, a short list of subjects describing the collection, separated by semicolon, to appear in rich markup
 keywords: performance arts;streaming videos;hemi institute;nyu
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
@@ -50,10 +50,10 @@ metadata: video-metadata
 #   Enter information for your organization (replacing the CDIL links and name below) if you'd like to brand your site with a logo
 #   To remove the branding, comment out these values, or delete them. 
 #
-organization-name: "Center for Digital Inquiry and Learning (CDIL)"
-organization-link: https://cdil.lib.uidaho.edu/
-organization-logo-banner: https://cdil.lib.uidaho.edu/storying-extinction/assets/img/cdil.png
-organization-logo-nav: https://cdil.lib.uidaho.edu/assets/img/logo.png
+organization-name: "Hemispheric Institute of Performance & Politics"
+organization-link: https://hemisphericinstitute.org/en/
+# organization-logo-banner: https://cdil.lib.uidaho.edu/storying-extinction/assets/img/cdil.png
+# organization-logo-nav: https://cdil.lib.uidaho.edu/assets/img/logo.png
 
 ##########
 # GOOGLE SERVICES [optional!]
