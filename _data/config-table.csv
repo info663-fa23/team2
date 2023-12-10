@@ -1,6 +1,5 @@
 field,display_name
 title,Event Title
-object_location,Video URL
 dct:isPartOf,Collection Title
 dct:spatial,Event Location
 pbc:pbcoreAssetDate,Event Date
