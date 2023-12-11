@@ -1,28 +1,28 @@
 field,display_name,browse_link,external_link,dc_map,schema_map
-title,Event Title,,,,
-objectid,Video Identifier,,,,
-object_location,Video URL,false,true,,
-pbc:instantiationDuration,Video Duration,,,,
-dct:isPartOf,Collection Title,true,,,
-dct:alternative,Alternate Title,,,,
-dct:spatial,Event Location,true,,,
-pbc:pbcoreDescription,Event Description,,,,
-pbc:pbcoreAssetDate,Event Date,,,,
-dct:language,Language,true,,,
-dct:type,Event Type,true,,,
-pbc:pbcoreSubject,Subject,true,,,
-dct:rightsHolder,Copyright Holder,,,,
-hemi:assistantDirector,Assistant Director,true,,,
-hemi:composer,Composer,true,,,
-hemi:costumeDesigner,Costume Designer,true,,,
-hemi:creator,Creator,true,,,
-hemi:director,Director,true,,,
-hemi:editor,Editor,true,,,
-hemi:interviewee,Interviewee,true,,,
-hemi:interviewer,Interviewer,true,,,
-hemi:pedagogue,Pedagogue,true,,,
-hemi:performer,Performer,true,,,
-hemi:producer,Producer,true,,,
-hemi:setDesigner,Set Designer,true,,,
-hemi:videographer,Videographer,true,,,
-hemi:writer,Writer,true,,,
+title,Event Title,,,DCTERMS.title,name
+objectid,Video Identifier,,,DCTERMS.identifier,identifier
+object_location,Video URL,false,true,DCTERMS.identifier,embedUrl
+pbc:instantiationDuration,Video Duration,,,DCTERMS.extent,duration
+dct:isPartOf,Collection Title,true,,DCTERMS.isPartOf,isPartOf
+dct:alternative,Alternate Title,,,DCTERMS.alternative,alternateName
+dct:spatial,Event Location,true,,DCTERMS.spatial,location
+pbc:pbcoreDescription,Event Description,,,DCTERMS.description,description
+pbc:pbcoreAssetDate,Event Date,,,DCTERMS.date,startDate
+dct:language,Language,true,,DCTERMS.language,inLanguage
+dct:type,Event Type,true,,DCTERMS.type,additionalType
+pbc:pbcoreSubject,Subject,true,,DCTERMS.subject,about
+dct:rightsHolder,Copyright Holder,,,DCTERMS.rightsHolder,copyrightHolder
+hemi:assistantDirector,Assistant Director,true,,DCTERMS.contributor,contributor
+hemi:composer,Composer,true,,DCTERMS.contributor,composer
+hemi:costumeDesigner,Costume Designer,true,,DCTERMS.contributor,contributor
+hemi:creator,Creator,true,,DCTERMS.creator,contributor
+hemi:director,Director,true,,DCTERMS.contributor,director
+hemi:editor,Editor,true,,DCTERMS.contributor,contributor
+hemi:interviewee,Interviewee,true,,DCTERMS.contributor,contributor
+hemi:interviewer,Interviewer,true,,DCTERMS.contributor,contributor
+hemi:pedagogue,Pedagogue,true,,DCTERMS.contributor,contributor
+hemi:performer,Performer,true,,DCTERMS.contributor,performer
+hemi:producer,Producer,true,,DCTERMS.contributor,contributor
+hemi:setDesigner,Set Designer,true,,DCTERMS.contributor,contributor
+hemi:videographer,Videographer,true,,DCTERMS.contributor,contributor
+hemi:writer,Writer,true,,DCTERMS.contributor,contributor
